@@ -1,0 +1,117 @@
+/* Estilos Globais */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container principal */
+.container {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Input de arquivo */
+#uploadPlanilha {
+    display: block;
+    margin: 0 auto 20px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fafafa;
+    cursor: pointer;
+}
+
+/* Estilos da Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+}
+
+.material-symbols-outlined {
+    margin-right: 10px;
+    vertical-align: middle; /* Alinha o ícone verticalmente com o texto */
+}
+
+.arrow_up {
+    color: green; /* Cor para o ícone de subida */
+}
+
+.arrow_down {
+    color: red; /* Cor para o ícone de descida */
+}
+
+td {
+    height: 50px;
+    align-items: center; /* Alinha verticalmente */
+    justify-content: center; /* Alinha horizontalmente */
+}
+
+td img {
+    width: 50px;
+    height: 50px; /* Garante que a imagem tenha altura */
+    border-radius: 50%;
+    margin-right: 10px; /* Espaço entre a imagem e o texto */
+}
+
+td div {
+    display: flex;
+    align-items: center; /* Alinha verticalmente o texto com a imagem */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #e0e0e0;
+}
+
+/* Total de Pontos */
+.total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.total span {
+    color: #333;
+}
+
+/* Espaço invisível para alinhar vendedores */
+.invisible-space {
+    display: inline-block;
+    width: 30px; /* Ajuste a largura conforme necessário */
+}
