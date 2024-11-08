@@ -18,9 +18,9 @@ const db = getFirestore(app);
 const vendedores = [
   { nome: 'Wesley', pontos: 0, foto: 'Vendedores/Wesley Sa.jpg', id: 'wesley' },
   { nome: 'Murilo', pontos: 0, foto: 'Vendedores/Murilo Henrique.jpg', id: 'murilo' },
-  { nome: 'Valéria', pontos: 0, foto: 'Vendedores/valeria.jpg', id: 'valeria' },
-  { nome: 'Mateus', pontos: 0, foto: '', id: 'mateus' },
-  { nome: 'Leandro', pontos: 0, foto: '', id: 'leandro' },
+  { nome: 'Valéria', pontos: 0, foto: 'Vendedores/Valeria.jpg', id: 'valeria' },
+  { nome: 'Mateus', pontos: 0, foto: 'Vendedores/Mateus.jpg', id: 'mateus' },
+  { nome: 'Leandro', pontos: 0, foto: 'Vendedores/Leandro.jpg', id: 'leandro' },
   { nome: 'Tatiane', pontos: 0, foto: 'Vendedores/tatiane.jpg', id: 'tatiane' },
   { nome: 'Deives', pontos: 0, foto: 'Vendedores/deives.jpg', id: 'deives' },
   { nome: 'Gustavo', pontos: 0, foto: 'Vendedores/gustavo.jpg', id: 'gustavo' },
@@ -57,7 +57,6 @@ async function atualizarPontosFirestore(vendedorId, pontos) {
     await updateDoc(vendedorRef, { pontos: increment(pontos) });
   }
 }
-
 
 
 // Função para gerar o ranking
